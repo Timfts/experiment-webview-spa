@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Stellar Spiral React</title>
+  <script type="text/javascript">
+    // Hack para GitHub Pages SPA:
+    // Redireciona 404s para index.html com o path como query parameter
+    var pathSegmentsToKeep = 1;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>Esta página requer JavaScript para funcionar corretamente.</p>
+    <p><a href="/">Voltar para a página inicial</a></p>
+  </noscript>
+</body>
+</html>
